@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1;
+  height: 100%;
+  font-size: 14px;
+  color: black;
+  font-weight: 500;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+._conteiner {
+  max-width: 1076px;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+.header__conteiner {
+  display: flex;
+  min-height: 104px;
+  align-items: center;
+}
+._conteiner {
+}
+
+.header__logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+}
+.header__menu {
+  margin: 0px 0px 0px 133px;
+}
+.menu {
+}
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+}
+.menu__item {
+}
+.menu__link {
+  color: rgb(146, 146, 146);
+  line-height: 171%;
+  font-weight: 600;
+}
+@media (max-width: 992px) {
+  .header__menu {
+    margin: 0px 0px 0px 70px;
+  }
+}
+@media (max-width: 767px) {
+  .header__menu {
+    margin: 0px 0px 0px 30px;
+  }
+}
+@media (max-width: 479px) {
+  .menu__link {
+    font-size: 18px;
+  }
+  .menu__list {
+    gap: 20px;
+  }
+}
+.page {
+  flex: 1 1 auto;
+}
+._ibg {
+  position: relative;
+}
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.main-block__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.main-block {
+  position: relative;
+}
+.main-block__body {
+  padding: 184px 0px 191px 0px;
+
+  position: relative;
+  z-index: 2;
+}
